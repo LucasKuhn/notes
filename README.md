@@ -5,7 +5,7 @@ Notes for what I learned
 def method
   puts "Yay ruby code!"
 end
-
+````
 
 
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
