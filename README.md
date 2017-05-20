@@ -26,10 +26,11 @@ class ClassName
   end
 
 end
-#@@ => Class Variable
-#@ => Instance Variable
-# => args[:key] set's nil by default if no matching key is found
-# => args.fetch(:key) gives an error if no matching key is found
+#Comments
+@@ => Class Variable
+@ => Instance Variable
+args[:key] set's nil by default if no matching key is found
+args.fetch(:key) gives an error if no matching key is found
 ````
 
 
