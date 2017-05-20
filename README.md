@@ -5,14 +5,17 @@ Notes for what I learned
 describe Class/Method do
   let(:object) { Class.new("Amazing Name") }
 
-  it "can do this exact thing" do
-    expect(object.name).to eq("Amazing Name")
+  it 'can do this exact thing' do
+    expect(object.name).to eq('Amazing Name')
   end
 
-  it "can do something elsewhere" do
-   expect { object.change_name_method = "Lame" }.to change { object.name }.to "Lame"
+  it 'can use a method to change a variable' do
+   expect { object.change_name_method('Another Name') }.to change { object.name }.to 'Lame'
   end
-
+  
+  it 'has a readable and writable first name' do
+    expect { object.name = 'Lame' }.to change { onject.name }.from('Amazing Name').to('Lame')
+  end
 end
 ```
 
@@ -24,12 +27,13 @@ class ClassName
     @married = args.fetch(:married, false)
   end
 end
-
-#Comments
-#@@ => Class Variable
-#@ => Instance Variable
-#args[:key] set's nil by default if no matching key is found
-#args.fetch(:key) gives an error if no matching key is found
+```
+### Comments
+```
+@@ => Class Variable
+@ => Instance Variable
+args[:key] set's nil by default if no matching key is found
+args.fetch(:key) gives an error if no matching key is found
 ```
 ## Git
 Delete untracked files:  
