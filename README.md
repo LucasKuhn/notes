@@ -1,6 +1,6 @@
 # WEEK 2
 Notes for what I learned
-# RSPEC
+## RSPEC
 ```ruby
 describe Class/Method do
   let(:object) { Class.new("Amazing Name") }
@@ -11,6 +11,23 @@ describe Class/Method do
 
   it "can do something elsewhere" do
    expect { object.change_name_method = "Lame" }.to change { object.name }.to "Lame"
+  end
+
+end
+````
+
+## Class
+```ruby
+#@@ => Class Variable
+#@ => Instance Variable
+# => args[:key] set's nil by default if no matching key is found
+# => args.fetch(:key) gives an error if no matching key is found
+
+class ClassName
+
+  def initialize(args)
+    @name = args[:name] || "Default Name"
+    @married = args.fetch(:married, false)
   end
 
 end
