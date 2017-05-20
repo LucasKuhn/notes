@@ -29,19 +29,23 @@ class ClassName
 end
 ```
 ### Comments
-```
-@@ => Class Variable
-@ => Instance Variable
-args[:key] set's nil by default if no matching key is found
-args.fetch(:key) gives an error if no matching key is found
-```
+
+`@@`- Class Variable  
+`@`- Instance Variable  
+`args[:key]`- set nil by default if no matching key is found and no default is given  
+`args.fetch(:key)`- gives an error if no matching key is found and no default is given  
 ## Git
 Delete untracked files:  
 ` git clean -n ` => Check what will be deleted  
 ` git clean -d ` => Delete Files  
 
-## Mac and Terminal
-` cmd+shift+4 ` -> Screenshot 
+## Shortcuts
+### Mac
+` cmd + shift + 4 ` -> Screenshot  
+` cmd + option + arrows ` => Resize window size
+### Sublime
+` cmd + option + 2 ` -> Split screen in two files
+
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
 
 ## GitHub Markdown Resources
