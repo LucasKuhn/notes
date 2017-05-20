@@ -1,9 +1,18 @@
 # WEEK 2
 Notes for what I learned
-# Some Edit
+# RSPEC
 ```ruby
-def method
-  puts "Yay ruby code!"
+describe Class/Method do
+  let(:object) { Class.new("Amazing Name") }
+
+  it "can do this exact thing" do
+    expect(object.name).to eq("Amazing Name")
+  end
+
+  it "can do something elsewhere" do
+   expect { object.change_name_method = "Lame" }.to change { object.name }.to "Lame"
+  end
+
 end
 ````
 
