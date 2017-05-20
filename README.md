@@ -40,6 +40,8 @@ Delete untracked files:
 ` git clean -n ` => Check what will be deleted  
 ` git clean -d ` => Delete Files  
 
+## Mac and Terminal
+` cmd+shift+4 ` -> Screenshot 
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
 
 ## GitHub Markdown Resources
