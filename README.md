@@ -19,7 +19,7 @@ describe Class/Method do
 end
 ```
 
-## Class
+## CLASS
 ```ruby
 class ClassName
   def initialize(args)
@@ -34,12 +34,12 @@ end
 `@`- Instance Variable  
 `args[:key]`- set nil by default if no matching key is found and no default is given  
 `args.fetch(:key)`- gives an error if no matching key is found and no default is given  
-## Git
+## GIT
 Delete untracked files:  
 ` git clean -n ` => Check what will be deleted  
 ` git clean -d ` => Delete Files  
 
-## Shortcuts
+## SHORTCUTS
 ### Mac
 ` cmd + shift + 4 ` -> Screenshot  
 ` cmd + option + arrows ` => Resize window size
