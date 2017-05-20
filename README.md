@@ -19,20 +19,22 @@ end
 ## Class
 ```ruby
 class ClassName
-
   def initialize(args)
     @name = args[:name] || "Default Name"
     @married = args.fetch(:married, false)
   end
-
 end
+
 #Comments
 #@@ => Class Variable
 #@ => Instance Variable
 #args[:key] set's nil by default if no matching key is found
 #args.fetch(:key) gives an error if no matching key is found
 ````
-
+## Git
+Delete untracked files:
+` git clean -n ` => Check what will be deleted
+` git clean -d ` => Delete Files
 
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
 
