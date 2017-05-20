@@ -1,4 +1,4 @@
-# WEEK 2
+# Week 2
 Notes for what I learned
 ## RSPEC
 ```ruby
