@@ -14,7 +14,7 @@ describe Class/Method do
   end
 
 end
-````
+```
 
 ## Class
 ```ruby
@@ -30,11 +30,11 @@ end
 #@ => Instance Variable
 #args[:key] set's nil by default if no matching key is found
 #args.fetch(:key) gives an error if no matching key is found
-````
+```
 ## Git
-Delete untracked files:
-` git clean -n ` => Check what will be deleted
-` git clean -d ` => Delete Files
+Delete untracked files:  
+` git clean -n ` => Check what will be deleted  
+` git clean -d ` => Delete Files  
 
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
 
