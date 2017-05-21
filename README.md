@@ -29,10 +29,10 @@ class ClassName
 end
 ```
 ### Comments
-`@@`- Class Variable
-`@`- Instance Variable
-`args[:key]`- set nil by default if no matching key is found and no default is given
-`args.fetch(:key)`- gives an error if no matching key is found and no default is given
+`@@`- Class Variable  
+`@`- Instance Variable  
+`args[:key]`- set nil by default if no matching key is found and no default is given  
+`args.fetch(:key)`- gives an error if no matching key is found and no default is given  
 
 ## GENERAL RUBY
 ### Recursion Example
@@ -50,22 +50,19 @@ countdown(5)
 2
 1
 ```
-
-
-## GIT
-Delete untracked files:
-` git clean -n ` => Check what will be deleted
-` git clean -d ` => Delete Files
-
-## SQL
-[Too many images, moved here](sql/README.md)
+## SQL Schemas
+[Images and details here](sql/README.md)
 
 ## SHORTCUTS
 ### Mac
 ` cmd + shift + 4 ` -> Screenshot
 ` cmd + option + arrows ` => Resize window size
 ### Sublime
-` cmd + option + 2 ` -> Split screen in two files
+` cmd + option + 2 ` -> Split screen in two files  
+### GIT  
+Delete untracked files:  
+` git clean -n ` => Check what will be deleted  
+` git clean -d ` => Delete Files  
 
 <p><a href="https://github.com/LucasKuhn/notes">Link Example</a></p>
 
