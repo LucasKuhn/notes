@@ -1,4 +1,4 @@
-[back-home](../)
+[back-home](https://github.com/LucasKuhn/notes)
 ## SQL
 ### One-to-many relationship
 ![one-to-many schema](https://github.com/sf-sea-lions-2017/database-drill-one-to-many-schema-challenge/blob/master/readme-assets/schema-example.png)  
