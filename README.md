@@ -29,10 +29,10 @@ class ClassName
 end
 ```
 ### Comments
-`@@`- Class Variable  
-`@`- Instance Variable  
-`args[:key]`- set nil by default if no matching key is found and no default is given  
-`args.fetch(:key)`- gives an error if no matching key is found and no default is given  
+`@@`- Class Variable
+`@`- Instance Variable
+`args[:key]`- set nil by default if no matching key is found and no default is given
+`args.fetch(:key)`- gives an error if no matching key is found and no default is given
 
 ## GENERAL RUBY
 ### Recursion Example

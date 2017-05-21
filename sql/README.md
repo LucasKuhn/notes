@@ -15,4 +15,4 @@
 *A review has an author, a product, and can have many favoritings*
 *A review is about one product, one product can have many reviews*
 
-Writing to DB files example : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
+Writing to DB files examples : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
