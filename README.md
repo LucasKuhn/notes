@@ -50,7 +50,7 @@ countdown(5)
 2
 1
 ```
-## SQL Schemas
+## SQL SCHEMAS
 [Images and details here](sql/README.md)
 
 ## SHORTCUTS
