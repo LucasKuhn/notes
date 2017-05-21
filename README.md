@@ -28,6 +28,12 @@ class ClassName
   end
 end
 ```
+### Comments
+`@@`- Class Variable
+`@`- Instance Variable
+`args[:key]`- set nil by default if no matching key is found and no default is given
+`args.fetch(:key)`- gives an error if no matching key is found and no default is given
+
 ## GENERAL RUBY
 ### Recursion Example
 ```ruby
@@ -44,12 +50,8 @@ countdown(5)
 2
 1
 ```
-### Comments
 
-`@@`- Class Variable
-`@`- Instance Variable
-`args[:key]`- set nil by default if no matching key is found and no default is given
-`args.fetch(:key)`- gives an error if no matching key is found and no default is given
+
 ## GIT
 Delete untracked files:
 ` git clean -n ` => Check what will be deleted
