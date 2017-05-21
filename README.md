@@ -43,12 +43,7 @@ def countdown(n)
   countdown(n-1)    # getting closer to base case
 end
 
-countdown(5)
-5
-4
-3
-2
-1
+countdown(5) # => 5,4,3,2,1
 ```
 ## SQL SCHEMAS
 [Images and details here](sql/README.md)
