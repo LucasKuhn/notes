@@ -19,7 +19,8 @@ describe Class/Method do
 end
 ```
 
-## CLASS
+## CLASSES
+### Initialize recieving a hash argument
 ```ruby
 class ClassName
   def initialize(args)
@@ -27,12 +28,21 @@ class ClassName
     @married = args.fetch(:married, false)
   end
 end
+#args[:key] - set nil by default if no matching key is found and no default is given  
+#args.fetch(:key) - gives an error if no matching key is found and no default is given  
+```
+### Inheritance
+```ruby
+class Class < SuperClass
+  def initialize
+   super #=>Copy all initialize from SuperClass
+   @classvar = "Another Value"
+  end 
+end
 ```
 ### Comments
 `@@`- Class Variable  
 `@`- Instance Variable  
-`args[:key]`- set nil by default if no matching key is found and no default is given  
-`args.fetch(:key)`- gives an error if no matching key is found and no default is given  
 
 ## GENERAL RUBY
 ### Recursion
