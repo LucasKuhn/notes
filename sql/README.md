@@ -16,3 +16,5 @@
 *A favoriting has a user who made it and a review*  
 *A review has an author, a product, and can have many favoritings*  
 *A review is about one product, one product can have many reviews*  
+
+[Extra Schema Examples](http://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html)
