@@ -35,7 +35,7 @@ end
 `args.fetch(:key)`- gives an error if no matching key is found and no default is given  
 
 ## GENERAL RUBY
-### Recursion Example
+### Recursion
 ```ruby
 def countdown(n)
   return if n.zero? # base case
@@ -44,6 +44,14 @@ def countdown(n)
 end
 
 countdown(5) # => 5,4,3,2,1
+```
+### Reduce
+```ruby 
+  #collection.reduce(initial_value, :name_of_method)
+  [2,2,3].reduce(0, :+) => 7
+  [2,2,3].reduce(1, :*) => 12
+  #Also take blocks
+  [2,2,3].reduce(1) {|sum,element| sum*element}
 ```
 ## SQL SCHEMAS
 [Images and details here](sql/README.md)
