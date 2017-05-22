@@ -35,8 +35,8 @@ end
 ```ruby
 class Class < SuperClass
   def initialize
-   super #=>Copy all initialize from SuperClass
-   @classvar = "Another Value"
+   super                        #Copies all that is inside initialize from SuperClass
+   @classvar = "Another Value"  #You can still add things after that
   end 
 end
 ```
