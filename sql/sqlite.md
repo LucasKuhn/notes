@@ -37,9 +37,4 @@ VALUES
 #### Editing Tables
 **Renaming Table**: `ALTER TABLE name RENAME TO newname;`     
 **Add column to existing table:** `ALTER TABLE Persons ADD NickName varchar(255);`  
-**Update data in exisiting table:**  
-`
-UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
-WHERE CustomerID = 1;
-`  
+**Update data in exisiting table:**  `UPDATE tbname SET Name = 'Alfred', WHERE CustomerID = 1;`  
