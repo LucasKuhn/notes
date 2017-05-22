@@ -38,3 +38,6 @@ VALUES
 **Renaming Table**: `ALTER TABLE tblname RENAME TO newtblname;`     
 **Add column to existing table:** `ALTER TABLE Persons ADD NickName varchar(255);`  
 **Update data in exisiting table:**  `UPDATE tblname SET Name = 'Alfred' WHERE id = 1;`  
+
+Writing to DB files examples : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
+
