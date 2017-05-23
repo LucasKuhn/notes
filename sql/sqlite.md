@@ -28,23 +28,32 @@ VALUES
 ```
 
 ### EDITING TABLES
-#### BASICS  
+#### SELECT  
 ```sql
-# RENAME TABLE
+# SELECT ALL
+SELECT * FROM tblname;
+
+# SELECT ESPECIFIC 
+SELECT first_name FROM tblname;
+
+# SELECT IN ORDER 
+SELECT * FROM tblname 
+ORDER BY firs_name DESC; #ASC by default
+
+#
+```
+#### ALTER
+```sql
+# ALTER TABLE NAME
 ALTER TABLE tblname 
 RENAME TO newtblname;
 
-# ADD TO EXISTING TABLE
+# ADD ROW TO EXISTING TABLE
 ALTER TABLE Persons 
 ADD NickName varchar(255);
-
-# UPDATA DATA IN EXISTING TABLE
-UPDATE tblname 
-SET Name = 'Alfred' 
-WHERE id = 1;
 ```
 
-### Add-Ons
+### ADD-ONS
 Paste this to make tables more readable:  
 ```
 cat << EOF > ~/.sqliterc
