@@ -70,13 +70,30 @@ WHERE first_name LIKE 'A%'
 # '%A' => Ends with A
 # '%A%' => Has A somewhere in the string 
 ```
-#### JOIN / GROUP BY / COUNT
+#### COUNT / AVG / SUM
 ```sql
+# COUNT CREATED A ROW AND COUNT THINGS THAT MATCHES THE CRITERIA
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+# SUM ADDS ALL NUMERIC VALUES THAT MATCHES CRITERIA
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+# AVG SUMS AND GIVE THE AVERAGE OF THE ELEMENTS MATCHED
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
 # DISPLAY CITY AND HOW MANY PEOPLE LIVE IN THAT CITY 
 SELECT city, COUNT (id) 
 FROM people
 GROUP BY city
-
+```
+#### JOIN / GROUP BY 
+```sql
 # JOIN 
 SELECT artists.name, albums.title
 FROM artists JOIN albums
@@ -93,6 +110,8 @@ FROM albums, tracks, artists
 WHERE artists.id = albums.artist_id
 AND tracks.album_id = albums.id 
 AND tracks.name = 'Midnight'
+
+
 ```
 
 ### ADD-ONS
@@ -103,6 +122,7 @@ cat << EOF > ~/.sqliterc
 .mode column
 EOF
 ```
+
 
 Writing to DB files examples : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
 
