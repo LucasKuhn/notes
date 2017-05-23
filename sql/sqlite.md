@@ -28,7 +28,7 @@ VALUES
 ```
 
 ### EDITING TABLES
-#### SELECT  
+#### SELECT / ORDER BY
 ```sql
 # SELECT ALL
 SELECT * FROM tblname;
@@ -39,10 +39,8 @@ SELECT first_name FROM tblname;
 # SELECT IN ORDER 
 SELECT * FROM tblname 
 ORDER BY firs_name DESC; #ASC by default
-
-#
 ```
-#### ALTER
+#### ALTER / UPDATE
 ```sql
 # ALTER TABLE NAME
 ALTER TABLE tblname 
@@ -51,6 +49,50 @@ RENAME TO newtblname;
 # ADD ROW TO EXISTING TABLE
 ALTER TABLE Persons 
 ADD NickName varchar(255);
+
+# UPDATA DATA IN EXISTING TABLE
+UPDATE tblname 
+SET Name = 'Alfred' 
+WHERE id = 1;
+```
+#### WHERE / LIKE
+```sql
+# SELECTING WHEN CONDITIONS ARE MET (ANDs ARE OPTIONAL)
+SELECT * FROM invoices 
+WHERE billing_state = 'NV' 
+AND billing_city = 'Reno'
+AND total > 5.00
+
+# WHEN A CONDITION IS LIKE A CERTAIN PATTERN
+SELECT * FROM employees 
+WHERE first_name LIKE 'A%' 
+# 'A%' => Starts with A 
+# '%A' => Ends with A
+# '%A%' => Has A somewhere in the string 
+```
+#### JOIN / GROUP BY / COUNT
+```sql
+# DISPLAY CITY AND HOW MANY PEOPLE LIVE IN THAT CITY 
+SELECT city, COUNT (id) 
+FROM people
+GROUP BY city
+
+# JOIN 
+SELECT artists.name, albums.title
+FROM artists JOIN albums
+ON artists.id = albums.artist_id
+
+# ALIAS FOR JOIN
+SELECT artists.name, albums.title
+FROM artists, albums
+WHERE artists.id = albums.artist_id
+
+# MULTIPLE JOIN
+SELECT *
+FROM albums, tracks, artists
+WHERE artists.id = albums.artist_id
+AND tracks.album_id = albums.id 
+AND tracks.name = 'Midnight'
 ```
 
 ### ADD-ONS
