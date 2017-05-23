@@ -1,15 +1,15 @@
 
 To open File: 
 `$ sqlite3 database.db` 
-### In SQLITE3 
+### IN SQLITE3 
 
-#### Useful Commands
+#### USEFUL COMMANDS
 ```sql
 .tables #Show Tables
 .schema #Show Schema
 ```
 
-#### Creating Table 
+#### CREATING TABLE 
 ```sql
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,7 +20,7 @@ CREATE TABLE users (
   updated_at DATETIME NOT NULL
 );  /* Don't forget the semicolon */
 ```
-#### Populating Table
+#### POPULATING TABLE
 ```sql
 INSERT INTO users
 (first_name, last_name, email, created_at, updated_at)
@@ -29,18 +29,18 @@ VALUES
 ('Alyssa', 'Diaz', 'alyssa@devbootcamp.com', DATETIME('now'), DATETIME('now'));
 ```
 
-### Editing Tables
-**Renaming Table**: `ALTER TABLE tblname RENAME TO newtblname;`     
-**Add column to existing table:** `ALTER TABLE Persons ADD NickName varchar(255);`  
-**Update data in exisiting table:**  `UPDATE tblname SET Name = 'Alfred' WHERE id = 1;`  
+### EDITING TABLES
+#### BASICS
 **BASICS**  
 ```sql
 # RENAME TABLE
 ALTER TABLE tblname 
 RENAME TO newtblname;
+
 # ADD TO EXISTING TABLE
 ALTER TABLE Persons 
 ADD NickName varchar(255);
+
 # UPDATA DATA IN EXISTING TABLE
 UPDATE tblname 
 SET Name = 'Alfred' 
