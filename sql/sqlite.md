@@ -1,18 +1,13 @@
-### In The Terminal 
-Paste this to make tables more readable:  
-```
-cat << EOF > ~/.sqliterc
-.headers on
-.mode column
-EOF
-```
+
 To open File: 
 `$ sqlite3 database.db` 
 ### In SQLITE3 
 
 #### Useful Commands
-`.tables` - Show Tables  
-`.schema` - Show table schemas  
+```sql
+.tables #Show Tables
+.schema #Show Schema
+```
 
 #### Creating Table 
 ```sql
@@ -34,10 +29,32 @@ VALUES
 ('Alyssa', 'Diaz', 'alyssa@devbootcamp.com', DATETIME('now'), DATETIME('now'));
 ```
 
-#### Editing Tables
+### Editing Tables
 **Renaming Table**: `ALTER TABLE tblname RENAME TO newtblname;`     
 **Add column to existing table:** `ALTER TABLE Persons ADD NickName varchar(255);`  
 **Update data in exisiting table:**  `UPDATE tblname SET Name = 'Alfred' WHERE id = 1;`  
+**BASICS**  
+```sql
+# RENAME TABLE
+ALTER TABLE tblname 
+RENAME TO newtblname;
+# ADD TO EXISTING TABLE
+ALTER TABLE Persons 
+ADD NickName varchar(255);
+# UPDATA DATA IN EXISTING TABLE
+UPDATE tblname 
+SET Name = 'Alfred' 
+WHERE id = 1;
+```
+
+### Add-Ons
+Paste this to make tables more readable:  
+```
+cat << EOF > ~/.sqliterc
+.headers on
+.mode column
+EOF
+```
 
 Writing to DB files examples : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
 
