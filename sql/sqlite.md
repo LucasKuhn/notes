@@ -1,15 +1,13 @@
 
 To open File: 
 `$ sqlite3 database.db` 
-### IN SQLITE3 
-
-#### USEFUL COMMANDS
+### USEFUL COMMANDS
 ```sql
 .tables #Show Tables
 .schema #Show Schema
 ```
 
-#### CREATING TABLE 
+### CREATING TABLE 
 ```sql
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,7 +18,7 @@ CREATE TABLE users (
   updated_at DATETIME NOT NULL
 );  /* Don't forget the semicolon */
 ```
-#### POPULATING TABLE
+### POPULATING TABLE
 ```sql
 INSERT INTO users
 (first_name, last_name, email, created_at, updated_at)
@@ -30,8 +28,7 @@ VALUES
 ```
 
 ### EDITING TABLES
-#### BASICS
-**BASICS**  
+#### BASICS  
 ```sql
 # RENAME TABLE
 ALTER TABLE tblname 
