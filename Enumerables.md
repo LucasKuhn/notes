@@ -1,10 +1,14 @@
-!SINGLE RESPONSABILITY!
-
-Iteration - Each
-Manipulation - Map -> Manipulating something into something else
-Filtering - Select / Reject
-Aggregation - Reduce
-Sorting - Sort / Sort_by
+# Enumerables
+Enumerable is the name of a module. This module is included in Array and Hashes. You can check this by opening IRB and typing `Array.included_modules` and check the modules contained in the Array class. You can also check which methods are in the Enumerable module by typing `Enumerable.instance_methods.sort`
+### What are they for?
+We use them iterate,search,sort and manipulate collection. More specifically:  
+  
+**Iteration** - EACH  
+**Manipulation** - MAP   
+**Filtering** - SELECT / REJECT  
+**Aggregation** - REDUCE  
+**Sorting** - SORT / SORT_BY  
+There are many more methods, but these are the most common ones.
 
 #### SELECT - FILTER
 Array.select{|item| item.something } 
@@ -50,4 +54,6 @@ any?
 CLASS_VARIABLE -> always in class
 Class::CLASS_VARIABLE  
 
-[Enumerables Talk](https://talks.devbootcamp.com/playing-with-enumerable-methods-and-objects)
+[Enumerables DBC Talk](https://talks.devbootcamp.com/playing-with-enumerable-methods-and-objects)
+[Enumerables Concept](https://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/)
+
