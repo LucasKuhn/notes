@@ -2,11 +2,13 @@
 
 ### Inheritance:
 When something IS A other thing, it would be a good idea to make one inherit the other.
-Thing on the left IS A thing on the right
+Ex: A Human is a Mammal, so it could inherit from Mammal things he have as a default such as: Breathing, sleeping, blablabla
+```ruby
+ Class Human < Mammal
+ end 
+```
+*Thing on the left IS A thing on the right*
 
-Ex: 
-A Human is a Mammal, so it could inherit from Mammal things he have as a default
-EX: Breathing, sleeping, blablabla
 
 Inheritance is NOT for sharing code, but to moddel some kind of system.
 
