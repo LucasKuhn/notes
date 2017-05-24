@@ -31,6 +31,17 @@ end
 #args[:key] - set nil by default if no matching key is found and no default is given  
 #args.fetch(:key) - gives an error if no matching key is found and no default is given  
 ```
+### Initialize recieving a hash argument
+```ruby
+class ClassName
+  CLASS_CONSTANT = "something in caps always =P "
+  def initialize(args)
+    @name = args[:name] || "Default Name"
+    @married = args.fetch(:married, false)
+  end
+end
+  
+```
 ### Inheritance
 ```ruby
 class Class < SuperClass
