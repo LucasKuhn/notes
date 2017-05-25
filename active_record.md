@@ -1,8 +1,38 @@
-# Active Record
+# ACTIVE RECORD
 Active Record is a Gem for ORM (Object Relational Mapping)  
 It is the M on the MVC, a Model that is backed by Database  
+### CREATING TABLES
+The equivalent to doing this in SQL
+```ruby
+CREATE TABLE dogs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(50) NOT NULL,
+  license VARCHAR NOT NULL,
+  age INTEGER,
+  weight INTEGER,
+  owner_id INTEGER
+  created_at DATETIME,
+  updated_at DATETIME
+);
+```
+Is this in Ruby by using ActiveRecord
+```ruby
+class CreateDogs < ActiveRecord::Migration[5.0]
+  def change
+    create_table :dogs do |t|
+      t.string   :name, { null: false, limit: 50 }
+      t.string   :license, { null: false }
+      t.integer  :age
+      t.integer  :weight
+      t.integer  :owner_id
 
-### Introduction
+      t.timestamps
+    end
+  end
+end
+```
+
+### INTRODUCTION
 Class names singular, CamelCase
 Table namees plural, snake_case
 
