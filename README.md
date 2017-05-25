@@ -31,20 +31,24 @@ class Class < SuperClass
 end
 ```
 ### Printing name from Class
-When you try to print an instance from a class you will get the reference of the object, like: `#<Cat:0x007fc4a1969688>`. Ruby is printing the default .to_s set for classes, and the default is to print the name of the object and it's reference. You can create a custom .to_s method to you class so it will print whatever you want! 
+When you try to print an instance from a class you will get the reference of the object, like: `#<Cat:0x007fc4a1969688>`. Ruby is printing the default `to_s` method set for classes, and the default is to print the name of the object and it's reference. You can create a custom `to_s` method to you class so it will print whatever you want! 
 ```ruby
 class Cat
   attr_reader :name
   def initialize
     @name = "Whiskers"
   end 
+  
   def to_s
     "#{name}, the cat!"
   end
+  
 end
+
 cat1 = Cat.new
+puts "#{cat1}" # => `Whiskers, the cat!`
 ```
-running the code `puts "#{cat1}"` now would print `Whiskers, the cat!`    
+The last `puts` will print `Whiskers, the cat!` instead of the standart `#<Cat:0x007fc4a1969688>`
 ### Comments
 `@@`- Class Variable  
 `@`- Instance Variable  
