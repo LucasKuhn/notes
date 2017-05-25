@@ -1,23 +1,5 @@
 # Week 2
 Notes for what I learned
-## RSPEC
-```ruby
-describe Class/Method do
-  let(:object) { Class.new("Amazing Name") }
-
-  it 'can do this exact thing' do
-    expect(object.name).to eq('Amazing Name')
-  end
-
-  it 'can use a method to change a variable' do
-   expect { object.change_name_method('Another Name') }.to change { object.name }.to 'Lame'
-  end
-
-  it 'has a readable and writable first name' do
-    expect { object.name = 'Lame' }.to change { onject.name }.from('Amazing Name').to('Lame')
-  end
-end
-```
 
 ## CLASSES
 ### Initialize recieving a hash argument
@@ -48,6 +30,21 @@ class Class < SuperClass
   end 
 end
 ```
+### Printing name from Class
+When you try to print an instance from a class you will get the reference of the object, like: `#<Cat:0x007fc4a1969688>`. Ruby is printing the default .to_s set for classes, and the default is to print the name of the object and it's reference. You can create a custom .to_s method to you class so it will print whatever you want! 
+```ruby
+class Cat
+  attr_reader :name
+  def initialize
+    @name = "Whiskers"
+  end 
+  def to_s
+    "#{name}, the cat!"
+  end
+end
+cat1 = Cat.new
+```
+running the code `puts "#{cat1}"` now would print `Whiskers, the cat!`    
 ### Comments
 `@@`- Class Variable  
 `@`- Instance Variable  
