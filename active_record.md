@@ -2,6 +2,7 @@
 Active Record is a Gem for ORM (Object Relational Mapping)  
 It is the M on the MVC, a Model that is backed by Database  
 ### CREATING TABLES
+
 The equivalent to doing this in SQL
 ```ruby
 CREATE TABLE dogs (
@@ -15,10 +16,11 @@ CREATE TABLE dogs (
   updated_at DATETIME
 );
 ```
+
 Is this in Ruby by using ActiveRecord
 ```ruby
-class CreateDogs < ActiveRecord::Migration[5.0]
-  def change
+class CreateDogs < ActiveRecord::Migration[5.0] 
+  def change 
     create_table :dogs do |t|
       t.string   :name, { null: false, limit: 50 }
       t.string   :license, { null: false }
@@ -30,8 +32,15 @@ class CreateDogs < ActiveRecord::Migration[5.0]
     end
   end
 end
-```
 
+#It inherits from the Migration class in the ActiveRecord module
+#method_name :tbl_name do |table_object|
+#string = VARCHAR(255) unlesss limit
+#timestamp = 2 datetime column created_at and updated_at
+# {options} are good to protect the database / save space
+```
+The ***Migration file*** begins with a timestamp in the format YYYYMMDDHHMMSS. Thas is how it keeps track of the migrations and is able to go back, since each migration will only run once.
+The filename 
 ### INTRODUCTION
 Class names singular, CamelCase
 Table namees plural, snake_case
@@ -69,7 +78,7 @@ module ActiveRecord
 ### 
 
 
-
+### BUNDLE COMMANDS
 Check all the rake commands  
 `$ bundle exec rake -T`  
 
