@@ -17,7 +17,7 @@ The file will be in db/migrate
 5. Check if it is all good  
 `bundle exec spec`  
 
--To create a model (Class)(Ex. Student)  
+- To create a model (Class)(Ex. Student)  
 The file will be in app/models    
 `bundle exec rake generate:model NAME=Student`
 
