@@ -16,10 +16,11 @@ The file will be in db/migrate
 `bundle exec rake db:migrate`  
 5. Check if it is all good  
 `bundle exec spec`  
-
 - To create a model (Class)(Ex. Student)  
 The file will be in app/models    
-`bundle exec rake generate:model NAME=Student`
+`bundle exec rake generate:model NAME=Student`  
+- To seed the database (will run migrate/seeds.rb)  
+`db:seed`  
 
 - Check Version  
 `db:version`  
@@ -29,6 +30,7 @@ The file will be in app/models
 `$ gem install bundler`   
 - CHECK ALL RAKE COMMANDS    
 `$ bundle exec rake -T`  
+
 </p></details>  
 
 ## CREATING TABLES
