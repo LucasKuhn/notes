@@ -10,11 +10,16 @@ It is the M on the MVC, a Model responsible for representing business dataand lo
 2. Create the DataBase in the db/ directory  
 `bundle exec rake db:create`  
 3. Generate the the next migration (With proper naming)  
+The file will be in db/migrate  
 `bundle exec rake generate:migration NAME=create_class`  
 4. Migrate!  
 `bundle exec rake db:migrate`  
 5. Check if it is all good  
 `bundle exec spec`  
+
+-To create a model (Class)(Ex. Student)  
+The file will be in app/models    
+`bundle exec rake generate:model NAME=Student`
 
 - INSTALL BUNDLER  
 `$ gem install bundler`   
