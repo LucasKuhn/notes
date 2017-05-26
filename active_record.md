@@ -101,6 +101,69 @@ tenley.save
 tenley.
 ```
 
+## VALIDATIONS
+The same way you can create a table with a restriction in SQL
+```sql
+CREATE TABLE dogs (
+  name VARCHAR(50) NOT NULL,
+);
+```
+You can create add option to validade the input before trying to run the INSERT INTO statement in Active Record:
+```ruby 
+class Dog < ActiveRecord::Base
+  include USGeography
+
+  has_many :ratings
+  belongs_to :owner, { class_name: "Person" }
+
+  # owner must point to a record that actually exists (Person object)
+  validates :owner, { :presence => true }
+
+  # name and license are required
+  validates :name, :license, { :presence => true }
+
+  # license must be unique for every dog
+  validates :license, { :uniqueness => true }
+
+  # license must start with two capital letters, a dash, then any characters
+  validates :license, format: { with: /\A[A-Z]{2}\-/ }
+
+  # age is not required, but if it's present, can't be less than 0
+  validates :age, { :numericality => { greater_than_or_equal_to: 0 },
+                    :allow_blank  => true }
+
+  validate :license_from_valid_state
+
+  def license_from_valid_state
+    unless self.license.instance_of? String
+      errors.add :license, "must be a string"
+      return
+    end
+
+    abbreviation = self.license[0..1]
+    unless valid_state_abbreviation? abbreviation
+      errors.add :license, "must be from a valid US state"
+    end
+  end
+end
+```
+[Validation Checkers](http://guides.rubyonrails.org/active_record_validations.html#validation-helpers)
+[Rails Guide on Validation](http://guides.rubyonrails.org/active_record_validations.html)
+```ruby 
+  validates :coolness, { :presence => true }
+  validates :coolness, numericality: { greater_than: 1, less_than_or_equal_to: 10 }
+
+  validates :cuteness, { :presence => true }
+  validates :cuteness, numericality: { greater_than: 1, less_than_or_equal_to: 10 }
+
+  validates :judge, :dog, { :presence => true }
+
+  #A dog can be rated by different judges,
+  #But a judge can't rate the same dog twice
+  validates :judge, uniqueness: { scope: :dog}
+  # -- This also works (how?)
+  # validates :dog, uniqueness: { scope: :judge}
+```
 ## INTRODUCTION (Torey Video) - Not Complete
 Class names singular, CamelCase
 Table namees plural, snake_case
