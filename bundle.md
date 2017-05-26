@@ -1,7 +1,7 @@
 ### WORKFLOW  
-1. Install bundle gems from Gemfile.lock
+1. Install bundle gems from Gemfile.lock  
 `bundle install` or `bundle`  
-2. Create the DataBase in the db/ directory
+2. Create the DataBase in the db/ directory  
 `bundle exec rake db:create`  
 3. Generate the the next migration (With proper naming)  
 `bundle exec rake generate:migration NAME=create_class`  
@@ -10,9 +10,9 @@
 5. Check if it is all good  
 `bundle exec spec`  
 
-to install bundler  
-`$ gem install bundler` 
-Check all the rake commands  
+- INSTALL BUNDLER  
+`$ gem install bundler`   
+- CHECK ALL RAKE COMMANDS    
 `$ bundle exec rake -T`  
 
 **WHITHIN THE CONSOLE**  
