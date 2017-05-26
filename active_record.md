@@ -21,6 +21,10 @@ The file will be in db/migrate
 The file will be in app/models    
 `bundle exec rake generate:model NAME=Student`
 
+- Check Version  
+`db:version`  
+- Rollback  
+`db:rollback`  
 - INSTALL BUNDLER  
 `$ gem install bundler`   
 - CHECK ALL RAKE COMMANDS    
