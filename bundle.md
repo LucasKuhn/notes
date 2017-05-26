@@ -1,4 +1,4 @@
-### WORKFLOW  
+## WORKFLOW  
 1. Install bundle gems from Gemfile.lock  
 `bundle install` or `bundle`  
 2. Create the DataBase in the db/ directory  
@@ -15,7 +15,7 @@
 - CHECK ALL RAKE COMMANDS    
 `$ bundle exec rake -T`  
 
-**WHITHIN THE CONSOLE**  
+### WHITHIN THE CONSOLE 
 - `ActiveRecord::Base.connection.tables` Names of tables  
 - `ActiveRecord::Base.connection.columns(:table_name)` Objects representing columns in the table  
 - `ClassName` See the class and atributes  
