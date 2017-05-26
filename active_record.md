@@ -22,7 +22,7 @@ It is the M on the MVC, a Model responsible for representing business dataand lo
 `$ bundle exec rake -T`  
 </p></details>  
 
-### CREATING TABLES
+## CREATING TABLES
 
 The equivalent to doing this in SQL
 ```ruby
