@@ -1,4 +1,4 @@
-# Week 2
+# WEEK 2
 Notes for what I learned
 
 ## CLASSES
