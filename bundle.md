@@ -15,6 +15,14 @@
 - CHECK ALL RAKE COMMANDS    
 `$ bundle exec rake -T`  
 
+### In SQLITE3
+A prettier way to display schema than .schema
+```sql
+$ sqlite3 db/database.sqlite3
+
+sqlite> PRAGMA table_info(dogs);
+```
+
 ### WHITHIN THE CONSOLE 
 - `ActiveRecord::Base.connection.tables` Names of tables  
 - `ActiveRecord::Base.connection.columns(:table_name)` Objects representing columns in the table  
