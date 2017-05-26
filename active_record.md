@@ -91,8 +91,8 @@ Dog.find(3) /* the id 3 */
 Dog.find_by(name: "Jayda")
 Dog.order(name: :asc).where(age: 1).limit(1)
 ```
-[Active Record Calculations](http://api.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck)  
-[Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)  
+ [Active Record Calculations](http://api.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck)  
+ [Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)  
 
 ### INSTANTIATING A NEW OBJECT
 ```sql
@@ -168,8 +168,8 @@ class Dog < ActiveRecord::Base
   end
 end
 ```
-[Validation Checkers](http://guides.rubyonrails.org/active_record_validations.html#validation-helpers)
-[Rails Guide on Validation](http://guides.rubyonrails.org/active_record_validations.html)
+[Validation Checkers](http://guides.rubyonrails.org/active_record_validations.html#validation-helpers)  
+[Rails Guide on Validation](http://guides.rubyonrails.org/active_record_validations.html)  
 ```ruby 
   validates :coolness, { :presence => true }
   validates :coolness, numericality: { greater_than: 1, less_than_or_equal_to: 10 }
