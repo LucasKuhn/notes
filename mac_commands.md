@@ -1,7 +1,9 @@
 ## SHORTCUTS
 ### Mac
-` cmd + shift + 4 ` -> Screenshot
-` cmd + option + arrows ` => Resize window size
+` cmd + shift + 4 ` -> Screenshot  
+` cmd + option + arrows ` => Resize window size  
+SPECTACLE - App name to resize windows
+
 ### Sublime
 ` cmd + option + 2 ` -> Split screen in two files  
 ### GIT  
