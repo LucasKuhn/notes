@@ -1,7 +1,7 @@
 # ACTIVE RECORD
-Active Record is a Gem for ORM (Object Relational Mapping)
-It is the M on the MVC, a Model that is backed by Database
-### CREATING TABLES
+Active Record is a Gem for ORM (Object Relational Mapping).  
+It is the M on the MVC, a Model responsible for representing business dataand logic, that is backed by Database. It facilitates the creation and use of business objects whose data requires persistent storage to a database
+## CREATING TABLES
 
 The equivalent to doing this in SQL
 ```ruby
@@ -39,9 +39,69 @@ end
 #timestamp = 2 datetime column created_at and updated_at
 # {options} are good to protect the database / save space
 ```
-The ***Migration file*** begins with a timestamp in the format YYYYMMDDHHMMSS. Thas is how it keeps track of the migrations and is able to go back, since each migration will only run once.
-The filename
-### INTRODUCTION
+
+This second file is created when you run `bundle exec rake generate:migration NAME=create_dogs`
+and the method `change` is empty by default. Create table is only one thing you can do,
+more commands can be found here:  
+[Active Record Migrations](http://edgeguides.rubyonrails.org/active_record_migrations.html)  
+
+The ***Migration file*** name begins with a timestamp in the format YYYYMMDDHHMMSS. Thas is how it keeps track of the migrations and is able to go back, since each migration will only run once.
+
+## CLASSES
+```ruby
+class Dog < ActiveRecord::Base
+end
+```
+All the Class needs is inherited from `ActiveRecord::Base`. Neat!  
+  
+### BUNDLE EXEC RAKE CONSOLE
+When you open the console using `bundle exec rake console` you can do a few calls from the Dog class
+that inherited from ActiveRecord::Base.  
+```sql
+Dog.all
+Dog.where(age: 1)
+Dog.where("age = ? and name like ?", 1, '%Te%')
+Dog.order(age: :desc)
+Dog.limit(2)
+Dog.count
+Dog.pluck(:name, :age)
+Dog.first
+Dog.find(3) /* the id 3 */
+Dog.find_by(name: "Jayda")
+Dog.order(name: :asc).where(age: 1).limit(1)
+```
+[Active Record Calculations](http://api.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck)  
+[Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)  
+
+### INSTANTIATING A NEW OBJECT
+```sql
+new_dog = Dog.new(name: "Bear")
+Dog.new(color: "brown")
+Dog.count # -> 3
+new_dog.persisted?
+new_dog.save
+Dog.count # -> 4!
+```
+```sql
+Dog.create(name: "Max")
+Dog.create [{name: "Toot"}, {name: "Cosmo"}]
+Dog.find_by(license: "OH-9384764")
+Dog.find_or_initialize_by(license: "OH-9384764") #-> Only Local, not persited
+Dog.find_or_create_by(name: "Taj", license: "OH-9084736") #-> creates on the DB
+```
+### OBJECTS
+Every class object has their attributes as accessor methods by default, **but** the changes we
+make to them in the console are **not persistent** by default. To make them persistent, you have to
+call `.save` on the object you edited on console, or you can call `.destroy` and remove it completely.
+```sql
+tenley = Dog.find_by(name: "Tenley")
+tenley.age = 2
+tenley.assign_attributes(age: 3, license: "OH-1234567")
+tenley.save
+tenley.
+```
+
+## INTRODUCTION (Torey Video) - Not Complete
 Class names singular, CamelCase
 Table namees plural, snake_case
 
@@ -74,4 +134,3 @@ module ActiveRecord
    end
  end
  ```
-### Convention
