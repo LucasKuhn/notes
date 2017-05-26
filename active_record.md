@@ -1,7 +1,28 @@
 # ACTIVE RECORD
 Active Record is a Gem for ORM (Object Relational Mapping).  
 It is the M on the MVC, a Model responsible for representing business dataand logic, that is backed by Database. It facilitates the creation and use of business objects whose data requires persistent storage to a database
-## CREATING TABLES
+
+<details>
+  <summary>CONSOLE WORKFLOW (Click to Expand) </summary><p>  
+  
+1. Install bundle gems from Gemfile.lock  
+`bundle install` or `bundle`  
+2. Create the DataBase in the db/ directory  
+`bundle exec rake db:create`  
+3. Generate the the next migration (With proper naming)  
+`bundle exec rake generate:migration NAME=create_class`  
+4. Migrate!  
+`bundle exec rake db:migrate`  
+5. Check if it is all good  
+`bundle exec spec`  
+
+- INSTALL BUNDLER  
+`$ gem install bundler`   
+- CHECK ALL RAKE COMMANDS    
+`$ bundle exec rake -T`  
+</p></details>  
+
+### CREATING TABLES
 
 The equivalent to doing this in SQL
 ```ruby
