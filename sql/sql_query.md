@@ -122,9 +122,12 @@ cat << EOF > ~/.sqliterc
 .mode column
 EOF
 ```
+A prettier way to display schema than .schema
+```sql
+$ sqlite3 db/database.sqlite3
 
-
-Writing to DB files examples : [Phase 0 Puppy Maker](https://github.com/LucasKuhn/phase-0-tracks/blob/master/databases/puppy_maker/puppy_maker.rb)
+sqlite> PRAGMA table_info(dogs);
+```
 
 ### FROM SQL TUTOR - NOT EDITED YET
 43 - 
