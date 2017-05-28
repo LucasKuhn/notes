@@ -1,5 +1,4 @@
-[back-home](https://github.com/LucasKuhn/notes)
-## SQL
+## SCHEMAS
 ### One-to-many relationship
 ![one-to-many schema](https://github.com/sf-sea-lions-2017/database-drill-one-to-many-schema-challenge/blob/master/readme-assets/schema-example.png)  
 *One amazon user can have many orders*  
