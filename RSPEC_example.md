@@ -16,3 +16,8 @@ describe Class/Method do
   end
 end
 ```
+### Tips
+- You can add --fail-fast to the end so the testing will stop after the first fail  
+Ex: `rspec --fail-fast`
+- You can also add the line you want to run from the RSPEC file so it will run only that  
+Ex: `rspec ./spec/contact_spec.rb:18`
