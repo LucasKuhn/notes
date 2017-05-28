@@ -1,7 +1,6 @@
 # RAKE
-Rake is a Ruby gem that helps automate repetitive tasks. It is sometimes referenced as a build tool, since it helps build a file based on another (a Markdown to HTML, for example.) [More Info](https://github.com/ruby/rake#presentations-and-articles-about-rake)
-
-Like RSpec, it is a Domain Specific Languade (DSL)
+Rake is a Ruby gem that helps automate repetitive tasks. It is sometimes referenced as a build tool, since it helps build a file based on another (a Markdown to HTML, for example.) [More Info](https://github.com/ruby/rake#presentations-and-articles-about-rake)  
+Like RSpec, it is a Domain Specific Language(DSL) so the syntax may be a little bit weird, but it is ruby!
 
 ### RAKE TASKS
 They are run in the Rakefile:  
