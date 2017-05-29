@@ -6,7 +6,8 @@ Code along this prep work!
 The HTTP Client send the request to server and the server sends a response back.  
 
 # SINATRA
-It is a DSL (Domain Specific Language)  
+It is a DSL (Domain Specific Language) for quickly creating web applications.
+It acts as the SERVER, recieves and handles requests.
 OBS: It will route from the top-down  
 
 ## CONFIGURATIONS
