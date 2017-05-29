@@ -23,7 +23,17 @@ Host: google.com
 This is our **REQUEST HEADER**.  
 
 ## REQUEST HEADER
-HTTP_METHOD /route 
+```
+GET / HTTP/1.1
+Host: google.com
+
+```
+```
+HTTP_METHOD /resource HTTP.VERSION
+header_name: value
+(empty_line)
+```
+
 
 ## VERBS / METHODS
 These describe the action that should be performed on the host. They are fomalized and universally applicable:  
