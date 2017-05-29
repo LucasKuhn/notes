@@ -2,11 +2,10 @@
 [Video Source](https://talks.devbootcamp.com/intro-to-http)  
 
 # HTTP
-- **HTTP** HyperText Transfer Protocol  
-- It is a stateless protocol   
+**HTTP**  stands for HyperText Transfer Protocol. It is a stateless application protocol. HTTP is the protocol to exchange or transfer hypertext. It is called a stateless protocol because each command is executed independently, without any knowledge of the commands that came before it.
 
-## REQUESTS
-A **REQUEST** contains a *Method* and a *URL*  
+# REQUEST
+A **REQUEST** contains a **Method** and a **URL**  
 You can check a request by opening the console > network , let filter be All and add the tag 'Method'. Once you click a GET request it will display the Request Header with all the info send, and Responde Header with all the server returned.
 ### REQUEST HEADER
 On Accept is displays what the request wants the server to return.
@@ -24,7 +23,7 @@ These describe the action that should be performed on the host. They are fomaliz
 - **DELETE:** delete an existing resource.  
 
 ## URL
-![xomething jhere](https://github.com/LucasKuhn/notes/blob/master/phase2/images/http1-url-structure.png)  
+![URL Layout](https://github.com/LucasKuhn/notes/blob/master/phase2/images/http1-url-structure.png)  
 <p align="center">Uniform Resource Locator</p>
  - The default port is 80  
  
@@ -38,13 +37,13 @@ url.port
 url.path
 url.query
 ```
-## HEADER
-
-## BODY
+# RESPONSE
+It has a Status, Header and Body
 
 ## STATUS CODES
 - **1xx:** Informational Messages
 - **2xx:** Successful
 - **3xx:** Redirection
 - **4xx:** Client Error
-- **5xx:** Server Error
+- **5xx:** Server Error  
+[HTTP Statuses](https://httpstatuses.com/)  
