@@ -37,3 +37,5 @@ server_connection.puts(message) #send message to server
 
 response = server_connection.gets # Get response from server
 ```
+# RESOURCES
+[Source](https://github.com/sf-sea-lions-2017/raw-tcp-challenge)
