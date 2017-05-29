@@ -1,6 +1,3 @@
-[Text Source](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)  
-[Video Source](https://talks.devbootcamp.com/intro-to-http)  
-
 # HTTP
 **HTTP**  stands for HyperText Transfer Protocol. It is a stateless application protocol. HTTP is the protocol to exchange or transfer hypertext. It is called a stateless protocol because each command is executed independently, without any knowledge of the commands that came before it.
 
@@ -47,3 +44,8 @@ It has a Status, Header and Body
 - **4xx:** Client Error
 - **5xx:** Server Error  
 [HTTP Statuses](https://httpstatuses.com/)  
+
+# RESOURCES 
+[Text Source](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)  
+[Video Source](https://talks.devbootcamp.com/intro-to-http)  
+
