@@ -5,7 +5,16 @@ Read-Time : 2 minutes
 
 # REQUEST
 A **REQUEST** contains a **Method** and a **URL**  
-You can check a request by opening the console > network (let filter be All and add the tag 'Method'). Once you click a GET request it will display the Request Header with all the info send, and Responde Header with all that the server returned.  
+You can check a request on your browser by opening the console > network (let filter be All and add the tag 'Method').
+Once you click a GET request it will display 3 tabs: `General`, `Response Headers` and
+`Request Headers`. 
+Open the `Request Header` and toggle `view source`. Using Google as an example, the first
+lines look like this:  
+```
+GET / HTTP/1.1
+Host: google.com
+```
+This is our **REQUEST HEADER**.  
 **REQUEST HEADER**:
 On Accept it displays what the request wants the server to return.
 On User-Agent it displays info about what the user is using.
