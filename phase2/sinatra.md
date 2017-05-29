@@ -1,3 +1,7 @@
+# TO - DO
+Code along this prep work!
+[Snitching on Sinatra](https://github.com/sf-sea-lions-2017/snitching-on-sinatra-challenge)
+
 # HOW IT ALL WORKS
 The HTTP Client send the request to server and the server sends a response back.  
 
