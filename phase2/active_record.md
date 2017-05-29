@@ -1,3 +1,6 @@
+# TO-DO
+Design Your own Active Record from the Weekend prep!  
+[Pre-Work](https://github.com/sf-sea-lions-2017/phase-2-guide/blob/sf/week-4/pre-work.md)  
 # ACTIVE RECORD
 Active Record is a Gem for ORM (Object Relational Mapping).  
 It is the M on the MVC, a Model responsible for representing business dataand logic, that is backed by Database. It facilitates the creation and use of business objects whose data requires persistent storage to a database
