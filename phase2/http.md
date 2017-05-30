@@ -5,13 +5,11 @@ Read-Time : 2 minutes
 
 # REQUEST
 A **REQUEST** contains a **Method** and a **URL**  
-You can check a request on your browser by opening the console > network (let filter be All and add the tag 'Method').
-Once you click a GET request it will display 3 tabs: `General`, `Response Headers` and
-`Request Headers`. 
+You can check a request on chrome by opening the console > network (let filter be All and add the tag 'Method').
+Once you click a GET request it will display 3 tabs: `General`, `Response Headers` and `Request Headers`. 
 Open the `Request Header`:  
 
 There are a few things we can check there:
-
 - On Accept it displays what the request wants the server to return.
 - On User-Agent it displays info about what the user is using.
 
@@ -23,11 +21,7 @@ Host: google.com
 This is our **REQUEST HEADER**.  
 
 ## REQUEST HEADER
-```
-GET / HTTP/1.1
-Host: google.com
-
-```
+syntax
 ```
 HTTP_METHOD /resource HTTP.VERSION
 header_name: value
