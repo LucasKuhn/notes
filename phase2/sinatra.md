@@ -2,6 +2,7 @@
 Cinnamon Sticks `<%= %>` display the result of the code inside  
 Icecream Cones `<% %>` don't display the result to the page
 
+
 # SINATRA
 It is a DSL (Domain Specific Language) for quickly creating web applications.
 It acts as the SERVER, recieves and handles requests.
@@ -48,7 +49,7 @@ Is where the templates (erb) are stored.
 # RESOURCES
 [Intro Video](https://talks.devbootcamp.com/intro-to-sinatra-1)
 
-# Prep Work!
+# PREP WORK!
 [Snitching on Sinatra](https://github.com/sf-sea-lions-2017/snitching-on-sinatra-challenge)
 ```
 $ gem list sinatra
@@ -147,3 +148,4 @@ end
   <h1>Hello, friend!</h1>
 <% end %>
 ```
+Stopped taking notes on [part-3](https://github.com/sf-sea-lions-2017/snitching-on-sinatra-challenge/blob/master/part3.md)
