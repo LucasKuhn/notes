@@ -1,7 +1,9 @@
 ## COMMENTS
 Cinnamon Sticks `<%= %>` display the result of the code inside  
 Icecream Cones `<% %>` don't display the result to the page
-
+`views` folder for views 
+`db/migrate` place for migrations  
+A `<form action="/todos" method="post">` will take us to the post '/todos' for our application!
 
 # SINATRA
 It is a DSL (Domain Specific Language) for quickly creating web applications.
