@@ -1,4 +1,5 @@
 ## COMMENTS
+SINATRA IS A FRAMEWORK!
 Cinnamon Sticks `<%= %>` display the result of the code inside  
 Icecream Cones `<% %>` don't display the result to the page
 `views` folder for views 
