@@ -1,3 +1,22 @@
+# ASSOSSIATIONS
+```ruby
+# In the MODEL
+class Shirt < ApplicationRecord
+
+ # class name Designer and table name designers
+ # the table has a foreign key called designer_id
+ belongs_to :designer, class_name: :User
+
+ has_many :sales, class_name: :Purchase
+
+ # through does NOT get a table, but an association
+ has_many :purchasers, through: :sales
+
+end
+#   model Shirts linked by :purchases who link by :shirt
+has_many :shirts, through: :purchases, :source => :shirt
+```
+
 # TO-DO
 Design Your own Active Record from the Weekend prep!  
 [Pre-Work](https://github.com/sf-sea-lions-2017/phase-2-guide/blob/sf/week-4/pre-work.md)  
