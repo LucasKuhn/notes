@@ -40,3 +40,9 @@ Will redirect you to
   end 
 ```
 Where :id is set as a params[:id] being sent from the post
+
+## ACTIVE RECORD QUERY
+```
+# Seach with a range
+User.where(id:14000..14500)
+```
