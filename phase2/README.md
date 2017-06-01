@@ -50,3 +50,6 @@ User.where(id:14000..14500)
 # Using greater than 
 Event.where("starts_at > ?",Time.current).order(:starts_at)
 ```
+```ruby
+type="datetime-local"
+```
