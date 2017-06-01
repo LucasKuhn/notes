@@ -251,3 +251,12 @@ module ActiveRecord
    end
  end
  ```
+# CHANGING TABLE
+To change update and whatever
+```ruby
+change_table :products do |t|
+  t.remove :description, :name
+  t.string :part_number
+  t.rename :upccode, :upc_code
+end
+```
