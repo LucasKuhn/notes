@@ -70,3 +70,15 @@ category.id # => 9
 article = category.articles.create(name: "Best Article Ever")
 article.category_id # => 9
 ```
+## REST 
+
+| Description                        | Behavior | Request Type | Request Path     |
+|------------------------------------|----------|--------------|------------------|
+| Insert a dog record                | Create   | POST         | `/dogs`          |
+| Select all dogs records            | Read     | GET          | `/dogs`          |
+| Select one dog record              | Read     | GET          | `/dogs/:id`      |
+| Form for creating a new dog record | Read     | GET          | `/dogs/new`      |
+| Form for editing a dog record      | Read     | GET          | `/dogs/:id/edit` |
+| Update a dog record                | Update   | PUT          | `/dogs/:id`      |
+| Delete a dog record                | Delete   | DELETE       | `/dogs/:id`      |
+*Table 1*.  Conventional request types and paths for CRUD behaviors (based on [table][railsguides routes table] in RailsGuides).
