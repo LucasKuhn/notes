@@ -42,7 +42,11 @@ Will redirect you to
 Where :id is set as a params[:id] being sent from the post
 
 ## ACTIVE RECORD QUERY
-```
+```ruby
 # Seach with a range
 User.where(id:14000..14500)
+```
+```ruby
+# Using greater than 
+Event.where("starts_at > ?",Time.current).order(:starts_at)
 ```
