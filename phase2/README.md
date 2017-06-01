@@ -53,3 +53,19 @@ Event.where("starts_at > ?",Time.current).order(:starts_at)
 ```ruby
 type="datetime-local"
 ```
+## CREATING LINKED OBJECTS
+```ruby 
+class Article < ApplicationRecord
+  belongs_to :category
+end
+
+class Category < ApplicationRecord
+  has_many :articles
+end
+```
+```ruby 
+category = Category.create(name: "Some Category")
+category.id # => 9
+article = category.articles.create(name: "Best Article Ever")
+article.category_id # => 9
+```
