@@ -82,3 +82,9 @@ article.category_id # => 9
 | Update a dog record                | Update   | PUT          | `/dogs/:id`      |
 | Delete a dog record                | Delete   | DELETE       | `/dogs/:id`      |
 *Table 1*.  Conventional request types and paths for CRUD behaviors (based on [table][railsguides routes table] in RailsGuides).
+
+
+## SIMPLE WAY TO GET A GET REQUEST
+```ruby
+<p><a href="/users/new">Create a user</a></p>
+```
