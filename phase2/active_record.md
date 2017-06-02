@@ -260,3 +260,6 @@ change_table :products do |t|
   t.rename :upccode, :upc_code
 end
 ```
+removes the description and name columns, creates a part_number string column and adds an index on it. Finally it renames the upccode colum
+
+#
