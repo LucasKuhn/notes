@@ -88,3 +88,14 @@ article.category_id # => 9
 ```ruby
 <p><a href="/users/new">Create a user</a></p>
 ```
+## NETCAT 
+```
+$ nc -c hsh.dbcapps.com 80
+GET /levels/one HTTP/1.1
+Host: hsh.dbcapps.com
+```
+```
+$ nc -c 127.0.0.1 9393
+DELETE /entries/9 HTTP/1.1
+Host: 127.0.0.1
+```
