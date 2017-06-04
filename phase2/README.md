@@ -108,3 +108,9 @@ Host: 127.0.0.1
     </button>
   </form>
 ```
+```ruby
+          <li class="pipe-separate t-light-green left"><button id="logout" form="logout_form" type="submit">logout</button></li>
+          <form id="logout_form" action="/sessions" method="post">
+              <input type="hidden" name="_method" value="delete" />
+          </form>
+```
