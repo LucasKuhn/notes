@@ -1,5 +1,5 @@
 ## RECTANGLE FUNCTION
-```javacsript
+```javascript
 var rectOne   = {width: 10, height: 20};
 var rectTwo   = {width: 32, height: 13};
 var rectThree = {width: 20, height: 10};
