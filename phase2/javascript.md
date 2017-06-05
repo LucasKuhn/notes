@@ -50,3 +50,60 @@ weezerAlbums  = ["Weezer (The Blue Album)", "Weezer (The Green Album)", "Weezer 
 
 weezer = new Band("Weezer", weezerMembers, weezerAlbums)
 ```
+## OBJECT WITH FUNCTIONS
+```javascript
+var person = {
+  firstName: "Kweku",
+  lastName: "White",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+person.firstName;
+// => "Kweku"
+person.fullName();
+// => "Kweku White"
+```
+### CONSTRUCTOR FUNCTION (Persons)
+```javascript
+var Person = function(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+Person.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName
+}
+
+var grayson = new Person("Grayson", "Arthur");
+grayson.firstName;
+// => "Grayson"
+
+var warner  = new Person("Warner", "Constable");
+warner.fullName();
+// => "Warner Constable"
+```
+## JASMITE TESTS
+```javascript
+describe "a string with my name" do
+  let(:my_name) { "Carson Hollands" }
+  
+  it "is my name" do
+  	expect(my_name).to eq "Carson Hollands"
+  end
+end
+Figure 3. Testing the value of a Ruby string object with RSpec.
+
+describe("a string with my name", function() {
+  var myName;
+  
+  beforeEach(function() {
+    myName = "Carson Hollands";  
+  });
+  
+  it("is my name", function() {
+    expect(myName).toEqual("Carson Hollands");
+  });
+});
+```
