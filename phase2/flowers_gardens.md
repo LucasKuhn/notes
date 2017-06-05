@@ -1,4 +1,10 @@
 ```javascript
+/* flower */
+var Flower = function(name, color) {
+  this.name = name;
+  this.color = color;
+}
+
 /*
 
 Use object literal syntax to create a garden object with
