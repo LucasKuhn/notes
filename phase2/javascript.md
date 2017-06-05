@@ -84,7 +84,7 @@ var warner  = new Person("Warner", "Constable");
 warner.fullName();
 // => "Warner Constable"
 ```
-## JASMITE TESTS
+## JASMINE TESTS
 ```javascript
 describe "a string with my name" do
   let(:my_name) { "Carson Hollands" }
