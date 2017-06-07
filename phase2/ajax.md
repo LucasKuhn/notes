@@ -24,8 +24,9 @@ $(document).ready(function () {
   });
 });
 ```
+
+Nice trick to show what you clicked:
 ```javascript
-NICE-TRICK:
 $('body').on('click', function(event){
 console.log(event.target) });
 ```
