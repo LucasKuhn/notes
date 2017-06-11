@@ -69,14 +69,16 @@ var especialCaseListener = function () {
 #### On the route:
 ```ruby
   post '/posts/:id/vote' do
-    post = Post.find(params[:id])
-    post.votes.create(value: 1)
+    @post = Post.find(params[:id])
+    @post.votes.create(value: 1)
 
     if request.xhr?
-      # Jason makes the things be available on the .done response (responde.post and response.points)
+      # Jason makes turns it all into a string, so the 
+      # things be available on the .done response (response.post and response.points)
       content_type :json
       {post: post, points:post.points}.to_json
     else
+      // it only redirects when in not an ajax request
       redirect "/posts"
     end
 
