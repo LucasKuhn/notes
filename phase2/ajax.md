@@ -22,29 +22,10 @@ Workflow:
 ```javascript
 // Wait for the page to load
 $(document).ready(function () {
-  
   thingThatHappens();
-  $('#roll-form').on('submit', function(event){
-    event.preventDefault();
-
-    var method = $(this).attr('method');
-    var url = $(this).attr('action');
-    var data = $(this).serialize();
-
-    // ajax will set  request = (...)
-    $.ajax({
-      url: url,
-      type: method,
-      data: data
-    })
-    .done(function(response){
-      // console.log(response)
-      $('.roll').html(response)
-    });
-  });
 });
+
 var thingThatHappens = function() {
-  
   // $('tag') || $('.class') || $('#id') 
   $('.class').on('submit', function(event){
     event.preventDefault();
@@ -64,7 +45,6 @@ var thingThatHappens = function() {
       current_button.css('color','green');
       current_points.html(response.points);
     });
-    
   })
 };
 ```
