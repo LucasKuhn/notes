@@ -20,15 +20,16 @@ Workflow:
 ```
 
 ```javascript
+// Wait for the page to load
 $(document).ready(function () {
-
-
+  
+  thingThatHappens();
   $('#roll-form').on('submit', function(event){
     event.preventDefault();
 
     var method = $(this).attr('method');
     var url = $(this).attr('action');
-    var data = $(this).serialize()
+    var data = $(this).serialize();
 
     // ajax will set  request = (...)
     $.ajax({
@@ -42,6 +43,30 @@ $(document).ready(function () {
     });
   });
 });
+var thingThatHappens = function() {
+  
+  // $('tag') || $('.class') || $('#id') 
+  $('.class').on('submit', function(event){
+    event.preventDefault();
+    // ajax will set request = (...)
+    var method = $(this).attr('method');
+    var url = $(this).attr('action');
+    var data = $(this).serialize();
+    
+    var ajaxRequest = $.ajax({
+      url: url,
+      type: method,
+      data: data
+    });
+    
+    // .done gets the last line of the route as 'response'
+    ajaxRequest.done(function(response){
+      current_button.css('color','green');
+      current_points.html(response.points);
+    });
+    
+  })
+};
 ```
 
 
