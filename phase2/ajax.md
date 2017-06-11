@@ -1,11 +1,7 @@
 # AJAX
 Asyncronous JavaScript And XML.
 
-Nice trick to show what you clicked:
-```javascript
-$('body').on('click', function(event){
-console.log(event.target) });
-```
+
 ### Workflow
 ```javascript
   //   1- Select the thing! 
@@ -100,7 +96,12 @@ post '/posts' do
 end
 ```
 
-Nice trick to show what is this:
+Nice trick to show what you clicked:
+```javascript
+$('body').on('click', function(event){
+console.log(event.target) });
+```
+Nice trick to show what is 'this':
 ```javascript
 function logThis() {
 console.log("this is..." + this);
