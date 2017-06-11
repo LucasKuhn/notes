@@ -73,7 +73,7 @@ var especialCaseListener = function () {
     post.votes.create(value: 1)
 
     if request.xhr?
-      // Jason makes the things be available on the .done response (responde.post and response.points)
+      # Jason makes the things be available on the .done response (responde.post and response.points)
       content_type :json
       {post: post, points:post.points}.to_json
     else
