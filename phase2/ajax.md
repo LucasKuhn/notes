@@ -100,3 +100,9 @@ post '/posts' do
 end
 ```
 
+Nice trick to show what is this:
+```javascript
+function logThis() {
+console.log("this is..." + this);
+}
+```
