@@ -6,7 +6,7 @@ Nice trick to show what you clicked:
 $('body').on('click', function(event){
 console.log(event.target) });
 ```
-Workflow:
+### Workflow
 ```javascript
   //   1- Select the thing! 
   //   2- Check if you have the right thing! (alert / console.log)
@@ -18,7 +18,7 @@ Workflow:
   //   8- Display the things on the page! (.append, .html)
   //   9- Add a .fail cuz its fancy
 ```
-
+### Skeleton
 ```javascript
 // Wait for the page to load
 $(document).ready(function () {
@@ -66,7 +66,7 @@ var especialCaseListener = function () {
   });
 };
 ```
-on the route:
+#### On the route:
 ```ruby
   post '/posts/:id/vote' do
     post = Post.find(params[:id])
