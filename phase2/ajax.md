@@ -84,4 +84,19 @@ var especialCaseListener = function () {
 
   end
 ```
+```ruby
+post '/posts' do
+  @post = Post.new( title: params[:title],
+               username: Faker::Internet.user_name,
+               comment_count: rand(1000) )
+    if @post.save
+      status 200
+      # You append only the parial, not all the layout
+      # The partial calls for post and not @post, so you give it as a local
+      erb :_post, :layout => false, locals: {post: @post}
+    else
+      status 422
+    end
+end
+```
 
