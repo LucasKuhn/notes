@@ -23,6 +23,7 @@ Workflow:
 // Wait for the page to load
 $(document).ready(function () {
   thingThatHappens();
+  especialCaseListener();
 });
 
 var thingThatHappens = function() {
@@ -41,12 +42,44 @@ var thingThatHappens = function() {
     });
     
     // .done gets the last line of the route as 'response'
+    var thingYouWant = $(this).find('button');
     ajaxRequest.done(function(response){
-      current_button.css('color','green');
-      current_points.html(response.points);
+      thingYouWant.css('color','green');
+      thingYouWant.html("Replace with this!");
+      thingYouWant.append("Add this!");
+      // If you want to reload the page
+      location.reload();
+    });
+    
+    // Add a fail
+    ajaxRequest.fail(function(response){
+      alert("This bad thing happened!");
+      console.error(response); // or console.warn
     });
   })
 };
-```
 
+var especialCaseListener = function () {
+    $('.parent-class').on('click','.thing-you-want',function(){
+    event.preventDefault();
+    // (...)
+  });
+};
+```
+on the route:
+```ruby
+  post '/posts/:id/vote' do
+    post = Post.find(params[:id])
+    post.votes.create(value: 1)
+
+    if request.xhr?
+      // Jason makes the things be available on the .done response (responde.post and response.points)
+      content_type :json
+      {post: post, points:post.points}.to_json
+    else
+      redirect "/posts"
+    end
+
+  end
+```
 
