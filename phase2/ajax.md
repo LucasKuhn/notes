@@ -24,13 +24,14 @@ $(document).ready(function () {
 
 var thingThatHappens = function() {
   // $('tag') || $('.class') || $('#id') 
-  $('.class').on('submit', function(event){
+  $('#id-on-form').on('submit', function(event){
     event.preventDefault();
-    // ajax will set request = (...)
+    
     var method = $(this).attr('method');
     var url = $(this).attr('action');
     var data = $(this).serialize();
-    
+
+    // ajax will set request = (...)
     var ajaxRequest = $.ajax({
       url: url,
       type: method,
@@ -107,3 +108,5 @@ function logThis() {
 console.log("this is..." + this);
 }
 ```
+
+## [PENELOPE'S HORSES](https://github.com/sf-sea-lions-2017/ajax-checkpoint-challenge/blob/solo-lucaskuhn/public/js/application.js)
