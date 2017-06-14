@@ -111,3 +111,7 @@ describe("a string with my name", function() {
 ### [Orange-trees.js](https://github.com/sf-sea-lions-2017/oojs-orange-tree-challenge/blob/pair-intell-gent%2Clucaskuhn/src/orange_tree.js)
 ## [BIKES AND STATIONS](https://github.com/sf-sea-lions-2017/oojs-bikes-and-stations-challenge/tree/solo-lucaskuhn)
 ### [station.js](https://github.com/sf-sea-lions-2017/oojs-bikes-and-stations-challenge/blob/solo-lucaskuhn/src/station.js)
+
+## [GARDEN.js](https://github.com/sf-sea-lions-2017/oojs-garden-challenge/blob/pair-intell-gent%2Clucaskuhn/src/garden.js)
+
+## [JS RACER](https://github.com/sf-sea-lions-2017/phase-2-guide/blob/sf/week-6/monday.md)
