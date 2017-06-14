@@ -1,4 +1,4 @@
-## [PENELOPE'S HORSES](https://github.com/sf-sea-lions-2017/ajax-checkpoint-challenge/blob/solo-lucaskuhn/public/js/application.js)
+## [PENELOPE'S HORSES.js](https://github.com/sf-sea-lions-2017/ajax-checkpoint-challenge/blob/solo-lucaskuhn/public/js/application.js)
 ## [HACKER NEWS](https://github.com/sf-sea-lions-2017/ajaxifying-hacker-news-challenge/tree/solo-lucaskuhn)
 
 # AJAX
