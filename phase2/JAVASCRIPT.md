@@ -109,3 +109,4 @@ describe("a string with my name", function() {
 ```
 ## [ORANGE TREES IN JS](https://github.com/sf-sea-lions-2017/oojs-orange-tree-challenge/tree/pair-intell-gent%2Clucaskuhn)
 ## [BIKES AND STATIONS](https://github.com/sf-sea-lions-2017/oojs-bikes-and-stations-challenge/tree/solo-lucaskuhn)
+- [station.js](https://github.com/sf-sea-lions-2017/oojs-bikes-and-stations-challenge/blob/solo-lucaskuhn/src/station.js)
