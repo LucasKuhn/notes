@@ -1,3 +1,5 @@
+## [PENELOPE'S HORSES](https://github.com/sf-sea-lions-2017/ajax-checkpoint-challenge/blob/solo-lucaskuhn/public/js/application.js)
+
 # AJAX
 Asyncronous JavaScript And XML.
 
@@ -109,4 +111,4 @@ console.log("this is..." + this);
 }
 ```
 
-## [PENELOPE'S HORSES](https://github.com/sf-sea-lions-2017/ajax-checkpoint-challenge/blob/solo-lucaskuhn/public/js/application.js)
+
