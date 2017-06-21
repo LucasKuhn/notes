@@ -1,4 +1,5 @@
 # Basics
+[routes](http://guides.rubyonrails.org/routing.html)
 ```ruby
 <%= link_to "Home", root_path %>
 # => <a href="/">Home</a>
@@ -45,4 +46,34 @@
 # => <a href="/controller/reply/">Reply</a>
 # If not...
 # => <a href="/accounts/signup">Reply</a>
+```
+# Button to 
+```ruby
+<%= button_to "New", action: "new" %>
+# => "<form method="post" action="/controller/new" class="button_to">
+#      <input value="New" type="submit" />
+#    </form>"
+
+<%= button_to "New", new_articles_path %>
+# => "<form method="post" action="/articles/new" class="button_to">
+#      <input value="New" type="submit" />
+#    </form>"
+```
+# Form for
+```
+<%= form_for :person do |f| %>
+  First name: <%= f.text_field :first_name %><br />
+  Last name : <%= f.text_field :last_name %><br />
+  Biography : <%= f.text_area :biography %><br />
+  Admin?    : <%= f.check_box :admin %><br />
+  <%= f.submit %>
+<% end %>
+
+=>
+<form method="post" action="/people">
+ <input type='text' name='person[first_name]'>
+ <input type='text' name='person[last_name]'>
+ <input type='textarea' name='person[biography]'>
+ <input type='submit'>
+</form>
 ```
