@@ -10,10 +10,10 @@ This depends on you having this and that
 How to use it
 - Examples
 - Contributing
-[leiningen](https://github.com/technomancy/leiningen)
-[simplecov](https://github.com/colszowka/simplecov)
-[rails](https://github.com/rails/rails)
-*It is super ok to link to other guides!*
+*It is super ok to link to other guides!*  
+[leiningen](https://github.com/technomancy/leiningen)  
+[simplecov](https://github.com/colszowka/simplecov)  
+[rails](https://github.com/rails/rails)  
 
 # Continuos Integration
 - Travis CI
