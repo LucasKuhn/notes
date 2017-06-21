@@ -139,5 +139,28 @@ end
 13. add structure, navigation and styling
 ```
 # views/layouts/application.html.erb
-CONTINUE WATCHING VIDEO!
+  <body>
+    <div id="sidebar">
+      <div id="logout">
+        <%= link_to root_path do  %>
+          <%= image_tag "download.svg" %>
+        <% end %>
+      </div>
+      <ul>
+        <li class="category">Website</li>
+        <li><%= link_to "Blog", root_path %></li>
+        <li>About</li>
+      </ul>
+
+      <ul>
+        <li class="category">Social</li>
+        <li>Github</li>
+        <li>Email</li>
+      </ul>
+    </div>
+
+    <div></div>
+    <%= yield %>
+  </body>
 ```
+14. Rename application.css to .css.scss
