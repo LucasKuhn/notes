@@ -1,3 +1,16 @@
+# SET-UP
+```
+rails new app-name
+```
+It recieves options, most useful are: Making the database postgres (-d postgres) and removing the testing suite (-T).
+You can add a file called .railsrc to set these options as defaul:
+```
+# .railsrc
+--skip-test-unit
+-d postgresql
+-T
+```
+
 If it was sinatra
 ```ruby
 # in sinatra app
