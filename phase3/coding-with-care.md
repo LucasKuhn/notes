@@ -10,12 +10,15 @@ This depends on you having this and that
 How to use it
 - Examples
 - Contributing
-
+[leiningen](https://github.com/technomancy/leiningen)
+[simplecov](https://github.com/colszowka/simplecov)
+[rails](https://github.com/rails/rails)
 *It is super ok to link to other guides!*
 
 # Continuos Integration
 - Travis CI
 - Codeship (not open source) 
+- Coveralls
 
 # Static Code Quality Analysis
 - Code Climate
