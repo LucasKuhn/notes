@@ -1,4 +1,5 @@
-# MONGODB
+# MONGODB  
+
 ## The hell it is?
 MongoDB is a free and open-source cross-platform document-oriented database program.  
 Classified as a **NoSQL database** program, MongoDB uses JSON-like documents with schemas.
@@ -24,10 +25,9 @@ ODM
   
   
 ## What we mongoDB needs
-Since it is an Object-Document-Mapper (ODM) it doesn't use active record and for ruby we can use something else instead: The almighty magical **Mongoid** 
-  
-    
-    
+Since it is an Object-Document-Mapper (ODM) it doesn't use active record and for ruby we can use something else instead: The almighty magical **Mongoid**  
+*The hell in mongoid?* -> Basically does on MongoDB what ActiveRecord does on normal databases.  
+      
 # HOW TO
 ```
 $ brew install mongodb
@@ -39,7 +39,7 @@ in the Gemfile add:
 ```
 gem "mongoid"
 ```
-*The hell in mongoid?* -> Basically does on MongoDB what ActiveRecord does on normal databases.
+
 ```
 $ rails generate mongoid:config
 ```
