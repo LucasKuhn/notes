@@ -58,12 +58,12 @@ class Person
 end
 ```
 
-[Learn MongoDB](https://university.mongodb.com/)
-[Github Repo](https://github.com/mongodb)
-[Ruby driver](https://github.com/mongodb/mongo-ruby-driver)
-[What is NoSQL](https://www.mongodb.com/nosql-explained)
-[Quick intro with Rails](http://kerrizor.com/blog/2014/04/02/quick-intro-to-mongodb-in-rails)
-[Using on Rails 5](http://www.traversymedia.com/using-mongodb-ruby-rails-5/)
-[MongoDB with Mongoid](http://ianthro.com/using-mongodb-with-rails)
-[Mongoid Github](https://github.com/mongodb/mongoid)
-[Foreign Keys](https://stackoverflow.com/questions/17475913/foreign-keys-and-mongoid)
+[Learn MongoDB](https://university.mongodb.com/)  
+[Github Repo](https://github.com/mongodb)  
+[Ruby driver](https://github.com/mongodb/mongo-ruby-driver)  
+[What is NoSQL](https://www.mongodb.com/nosql-explained)  
+[Quick intro with Rails](http://kerrizor.com/blog/2014/04/02/quick-intro-to-mongodb-in-rails)  
+[Using on Rails 5](http://www.traversymedia.com/using-mongodb-ruby-rails-5/)  
+[MongoDB with Mongoid](http://ianthro.com/using-mongodb-with-rails)  
+[Mongoid Github](https://github.com/mongodb/mongoid)  
+[Foreign Keys](https://stackoverflow.com/questions/17475913/foreign-keys-and-mongoid)  
