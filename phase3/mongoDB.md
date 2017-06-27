@@ -57,6 +57,13 @@ class Person
   field :state, type: String
 end
 ```
+What about assossiations?
+```
+class User
+  include Mongoid::Document
+  has_many :posts
+end
+```
 
 [Learn MongoDB](https://university.mongodb.com/)  
 [Github Repo](https://github.com/mongodb)  
