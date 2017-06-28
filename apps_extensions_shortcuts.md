@@ -5,6 +5,10 @@
 
 ### Sublime
 ` cmd + option + 2 ` -> Split screen in two files  
+
+### Terminal
+`rm -rfv dontDeleteMe/*` -> Delete files inside folder but keep the folder
+
 ### GIT  
 Delete untracked files:  
 ` git clean -n ` => Check what will be deleted  
